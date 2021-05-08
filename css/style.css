@@ -85,7 +85,7 @@ span {
   padding-left: 45px;
 }
 .hero {
-  background: url('../image/hero.jpg')
+  background-image: url('../image/hero.jpg');
   background-size: cover;
   height: 707px;
   padding-top: 194px;
