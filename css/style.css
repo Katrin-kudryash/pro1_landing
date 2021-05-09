@@ -8,39 +8,47 @@ body{
 * body {
   box-sizing: border-box;
 }
-
-.container {
-  max-width: 1250px;
-  margin: 0 auto;
-  white-space: nowrap;
-}
-.button {
-  background: #E3B873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+button {
   border-radius: 2px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   outline: 0;
-  border: 0;
-  padding: 13px 33px;
   font-style: italic;
-  color: white;
   text-transform: uppercase;
 }
 
+.button-gold {
+  background: #E3B873;
+  border: 0;
+  color: white;
+}
+
+.button-transparent {
+  background: rgba(0, 0, 0, .2); 
+  color: white;
+  border: 1px solid white;
+}
+
+.content-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-representation__container {
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+
+.header-nav__button {
+  padding: 13px 33px;
+}
 .button-calculate {
 padding: 20px 42px;
 }
 
-.button-submit {
-  background: rgba(0, 0, 0, .2); 
-  color: white;
-  border: 1px solid white;
-  border-radius: 2px;
-  outline: 0;
-  padding: 20px 42px;
-  text-transform: uppercase;
-  font-style: italic;
 
-}
 
 span {
   color: #E3B873;
@@ -61,27 +69,38 @@ span {
   align-items: center;
 }
 
-.header-navigation {
+.header-nav {
   display: flex;
   margin: 0 auto;
 }
 
-.header-navigation__link {
+.header-nav__link {
   margin: 0px;
   text-decoration: none;
 	color: white;
   padding: 0 20px;
 }
 
-.header-navigation__link_home {
+.header-nav__link_home {
   color: #E3B873;
 }
-.hero {
+.content-representation {
   background: url('../image/hero.jpg');
   background-size: cover;
   height: 707px;
   padding-top: 194px;
   position:relative;
+  z-index: 1;
+  
+}
+
+.content-representation__button {
+  padding: 20px 0;
+  width: 207px;
+}
+
+.content-representation__button + .content-representation__button {
+  margin-left: 20px;
 }
 
 .hero-overlay {
@@ -94,16 +113,7 @@ span {
   background: rgba(0, 0, 0, .7);
 }
 
-.hero-wrapper, .hero-container {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-container__button + .hero-container__button {
-  margin-left: 20px;
-}
-
-.title {
+.page-title {
   margin: 0;
   font-family: Yeseva One, Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -123,7 +133,7 @@ span {
   color: #FFFFFF;
 }
 
-.phone {
+.header-nav__phone {
 font-family: Nunito Sans;
 font-style: normal;
 font-weight: normal;
@@ -131,7 +141,7 @@ font-size: 11px;
 line-height: 15px;
 text-align: right;
 text-decoration-line: underline;
-padding: 0px 67px 0px 45px;
+margin: 0 45px;
 color: #E3B873;
 } 
 
