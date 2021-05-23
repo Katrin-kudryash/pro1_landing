@@ -48,13 +48,6 @@ button {
 padding: 20px 42px;
 }
 
-span {
-  color: #E3B873;
-  list-style-type: none;
-  margin-left: 0;
-  margin-left: 0;
-}
-
 .logo {
 	color: #E3B873;
 }
@@ -105,7 +98,6 @@ span {
 }
 
 .hero-overlay {
-  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -113,17 +105,31 @@ span {
   bottom: 0;
   background: rgba(0, 0, 0, .7);
 }
-
 .page-title {
-  margin: 0;
   font-family: Yeseva One, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
+  text-transform: uppercase;
+}
+
+span {
+  color: #E3B873;
+  list-style-type: none;
+  margin-left: 0;
+  margin-left: 0;
+}
+
+.page-title-representation {
+  font-family: Yeseva One, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
   font-size: 40px;
   line-height: 53px;
-  text-transform: uppercase;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
+
 
 .text {
   font-family: Nunito Sans, Arial, Helvetica, sans-serif;
@@ -148,7 +154,7 @@ color: #E3B873;
 
 .projects {
   background: black;
-  padding: 107px 0 70px 0;  
+  padding: 107px 0 416px 0;  
 }
 
 .projects__slider-item {
@@ -160,7 +166,7 @@ color: #E3B873;
   margin-right: 50px;
 }
 
-.projects__subtitle{
+.projects__subtitle {
   font-family: Yeseva One, Arial, Helvetica, sans-serif;
   font-size: 27px;
   line-height: 37px;
@@ -270,5 +276,154 @@ span + span {
   bottom: 0;
 }
 
+.control {
+margin-top: -320px;
+}
+.control-content__icon {
+  margin-bottom: 30px;
+}
+.control-content__title {
+  font-family: Yeseva One, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  margin: 0 0 13px;
+}
 
+.control-content__icon { 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.control-content__underline {
+  width: 24px;
+  border-bottom: 2px solid #E3B873;
+}
+.control-content__camera-icon{
+  margin: 0 10px;
+}
+.control-content {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+}
 
+.control-content__video {
+  position: relative;
+  text-align: center;
+  max-width: 817px;
+  margin-bottom: 62px;
+  display: flex;
+}
+
+.control-content__hero-overlay{
+  display: flex;
+justify-content: center;
+align-items: center; 
+}
+.control-content__video-button-block {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+}
+
+.control-content__video-button-triangle {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-left: 22px solid #fff;
+  border-bottom: 12px solid transparent;
+}
+.control-content__underline_break {
+  width: 55px;
+  margin-bottom: 35px;
+}
+.control-content__description {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center; 
+  color: #363636; 
+  margin: 0 0 90px;
+  max-width: 680px;
+  text-align: center;
+}
+
+.control-content__form {
+  width: 100%;
+  max-width: 810px;
+}
+.control-content__form-input-block {
+  width: 100%;
+  max-width: 810px;
+  display: flex;
+  margin-bottom: 34px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control-content__form-label {
+  display: flex;
+  flex-direction: column;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+}
+.control-content__form-input {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: #363636;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  padding: 0 0 8px;
+  width: 230px;
+}
+.control-content__form-button {
+  padding: 12px 75px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.control-content__form-checkbox {
+  position: relative;
+}
+
+.control-content__form-checkbox:active, .control-content__form-checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.control-content__form-checkbox:checked {
+	background-color: red;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+.control-content__form-checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
