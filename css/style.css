@@ -21,6 +21,7 @@ button {
   background: #E3B873;
   border: 0;
   color: white;
+  cursor: pointer;
 }
 
 .button-transparent {
@@ -363,6 +364,7 @@ align-items: center;
 .control-content__form {
   width: 100%;
   max-width: 810px;
+  margin-bottom: 148px;
 }
 .control-content__form-input-block {
   width: 100%;
@@ -407,6 +409,7 @@ align-items: center;
 }
 .control-content__form-checkbox {
   position: relative;
+  
 }
 
 .control-content__form-checkbox:active, .control-content__form-checkbox:checked:active {
@@ -426,4 +429,481 @@ align-items: center;
 	top: 0px;
 	left: 3px;
 	color: #99a1a7;
+}
+
+.type-of-repair {
+  margin-bottom: 200px;
+}
+.type-of-repair__title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  margin: 0 0 13px;
+}
+
+.type-of-repair__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.type-of-repair__underline {
+  width: 24px;
+  border-bottom: 2px solid #E3B873;
+}
+
+.type-of-repair__icon-repair {
+  margin: 0 13px;
+}
+
+.type-of-repair__icon {
+  margin-bottom: 31px;
+}
+
+.type-of-repair__content{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 230px;
+}
+.type-of-repair-item {
+  max-width: 392px;
+  width: 100%;
+}
+
+.type-of-repair-item + .type-of-repair-item {
+  margin-left: 30px;
+}
+.type-of-repair-item__image {
+  display: block;
+}
+.type-of-repair-item__description {
+  padding: 25px 34px 0;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  position: relative;
+  z-index: 1;
+  margin: -127px 31px 27px;
+  background-color: #fff;
+  padding-bottom: 27px;
+}
+.type-of-repair-item__description-title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+  margin: 0 0 13px;
+}
+
+.type-of-repair-item__list {
+  margin: 0 0 23px;
+  padding: 0;
+}
+
+.type-of-repair-item__list-item {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 27px;
+  color: #959595;
+  list-style-type:none;
+}
+
+.type-of-repair-item__list-item::before {
+  content: '\2022';
+  margin-right: 5px
+}
+
+.type-of-repair-item__price {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 17px 22px;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  width: max-content;
+  position: absolute;
+  left: 0;
+}
+
+.type-of-repair__measure-request {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.type-of-repair__measure-request-bg-image {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+  left: -250px;
+  width: 1006px;
+  height: 645px;
+}
+
+.type-of-repair__measure-request-hints {
+  padding-right: 80px;
+  margin-right: 131px;
+}
+
+.type-of-repair__measure-request-hints-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  /* margin-left: 186px; */
+}
+
+.type-of-repair__measure-request-hints-item:last-of-type {
+  margin-bottom: 46px;
+}
+
+.type-of-repair__measure-request-hints-item-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E3B873;
+  border: 8px solid #FFFFFF;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.type-of-repair__measure-request-hints-item-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #363636;
+}
+
+.type-of-repair__measure-request-form-block {
+  flex-grow: 1;
+  max-width: 506px;
+}
+
+.type-of-repair__measure-request-form {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 38px;
+  background-color: black;
+  padding: 28px 48px;
+}
+
+.type-of-repair__measure-request-form-title {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 0 40px;
+}
+
+.type-of-repair__measure-request-form-label {
+  display: flex;
+  flex-direction: column;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 48px;
+}
+
+.type-of-repair__measure-request-form-label_last {
+  margin-bottom: 16px;
+}
+
+.type-of-repair__measure-request-form-input {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: #FFFFFF;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0 0 8px;
+  background-color: black;
+}
+
+.type-of-repair__measure-request-form-input::placeholder {
+  color: #fff;
+}
+
+.type-of-repair__measure-request-form-checkbox {
+  display: flex;
+  margin-bottom: 39px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 163.68%;
+  color: #FFFFFF;
+}
+
+.type-of-repair__measure-request-form-button {
+  padding: 19px 40px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  display: block;
+}
+
+.type-of-repair__measure-request-discount-block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 30px;
+}
+
+.type-of-repair__measure-request-discount-icon-block {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.type-of-repair__measure-request-discount-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #E3B873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  margin: 0;
+}
+
+.design-styles {
+  background: url(../image/desigh-styles.jpg);
+  background-size: cover;
+  position:relative;
+  z-index: 1;
+}
+
+.design-styles-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+}
+
+.design-styles-block {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+}
+.design-styles-block__list-box {
+  padding: 137px 0 97px;
+}
+
+.design-styles-block__title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+  margin: 0 0 47px;
+}
+
+.design-styles-block__list {
+  padding: 0;
+}
+.design-styles-block__list-item {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  list-style-type: none;
+  cursor: pointer;
+  width: max-content;
+}
+
+.design-styles-block__list-item:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.design-styles-block__list-item_gold {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+  padding-bottom: 4px;
+}
+.design-styles-block__image-container {
+  display: flex;
+  position: relative;
+  width: 752px;
+}
+
+.design-styles-block__american-images {
+  flex-direction: column;
+  position: absolute;
+  top: -41px;
+}
+
+.design-styles-block__american-images + .design-styles-block__american-images {
+  margin-left: 44px;
+  right: 0;
+  top: -112px;
+}
+.design-styles-block__american-images img {
+  display: flex;
+  max-width: 354px;
+}
+
+.design-styles-block__american-images img + img {
+  margin-top: 40px;
+}
+
+.our-clients__container {
+  margin-top: 110px;
+}
+
+.our-clients__title-block {
+  margin-bottom: 24px;
+}
+
+.our-clients__title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  margin: 0 0 16px;
+}
+
+.our-clients__icon-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.our-clients__underline {
+  border-bottom: 2px solid #E3B873;
+  width: 32px;
+
+}
+.our-clients__icon {
+  margin: 0 8px;
+  width: 32px;
+}
+
+.our-clients__description {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #363636;
+  margin: 0 0 29px;
+}
+
+.our-clients-review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-clients-review__item {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  padding: 24px 32px 0 20px;
+  width: 100%;
+  max-width: 376px;
+}
+
+.our-clients-review__item + our-clients-review__item {
+  margin-right: 54px;
+}
+.our-clients-review__item-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.our-clients-review__item-photo {
+  border-radius: 50%;
+  margin-right: 23px;
+}
+
+.our-clients-review__item-name {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+  margin: 0;
+  
+}
+
+.our-clients-review__text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 180%;
+  color: #959595;
+  margin: 0 0 63px;
+}
+
+.our-clients-review__label {
+  display: flex;
+  width: max-content;
+  position: relative;
+  bottom: -27px;
+  left: -20px;
+}
+
+.our-clients-review__label-content {
+  padding: 11px 14px 11px 17px;
+  display: flex;
+  align-items: center;
+}
+
+.our-clients-review__label-content + .our-clients-review__label-content {
+  border-left: 1px solid white;
+}
+
+.our-clients-review__label-icon {
+  margin-right: 15px;
 }
