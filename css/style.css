@@ -852,7 +852,7 @@ align-items: center;
 }
 
 .our-clients-review__item + our-clients-review__item {
-  margin-right: 54px;
+margin-left: 54px;
 }
 .our-clients-review__item-title {
   display: flex;
@@ -906,4 +906,12 @@ align-items: center;
 
 .our-clients-review__label-icon {
   margin-right: 15px;
+}
+
+.our-clients-review-font-image {
+  display: flex;
+margin-left: -200px;
+}
+.our-clients-review-font-image-last-image {
+  margin-right: -500px;
 }
