@@ -10,6 +10,18 @@ body{
   box-sizing: border-box;
 }
 
+.font-nunito-sans {
+  font-family: Nunito Sans, Arial, Helvetica, sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.font-yeseva-one {
+  font-family: Yeseva one, Arial, Helvetica, sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+}
+
 button {
   border-radius: 2px;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -53,6 +65,9 @@ padding: 20px 42px;
 
 .logo {
 	color: #E3B873;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
 }
 
 .header {
@@ -76,6 +91,8 @@ padding: 20px 42px;
   text-decoration: none;
 	color: white;
   padding: 0 20px;
+  font-size: 11px;
+  line-height: 15px;
 }
 
 .nav-page__link_home {
@@ -111,9 +128,6 @@ padding: 20px 42px;
 }
 
 .page-title {
-  font-family: Yeseva One, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -125,9 +139,6 @@ span {
 }
 
 .page-title-representation {
-  font-family: Yeseva One, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   margin: 0;
   font-size: 40px;
   line-height: 53px;
@@ -136,18 +147,12 @@ span {
 }
 
 .text {
-  font-family: Nunito Sans, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 22px;
   line-height: 36px;
   color: #FFFFFF;
 }
 
 .nav-page__phone {
-font-family: Nunito Sans, Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: normal;
 font-size: 11px;
 line-height: 15px;
 text-align: right;
@@ -171,7 +176,6 @@ color: #E3B873;
 }
 
 .projects__subtitle {
-  font-family: Yeseva One, Arial, Helvetica, sans-serif;
   font-size: 27px;
   line-height: 37px;
   text-align: left;
@@ -205,9 +209,6 @@ color: #E3B873;
 }
 
 .projects__info-item-title {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
@@ -216,9 +217,6 @@ color: #E3B873;
 }
 
 .projects__info-item-text {
-  font-family: Nunito Sans, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 21px;
   color: #FFFFFF;
@@ -258,9 +256,6 @@ color: #E3B873;
 }
 
 .right-content-text__link {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
@@ -297,9 +292,6 @@ color: #E3B873;
 }
 
 .control-content__title {
-  font-family: Yeseva One, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 28px;
@@ -319,7 +311,7 @@ color: #E3B873;
   border-bottom: 2px solid #E3B873;
 }
 
-.control-content__camera-icon{
+.control-content__camera-icon {
   margin: 0 10px;
 }
 
@@ -337,7 +329,7 @@ color: #E3B873;
   display: flex;
 }
 
-.control-content__hero-overlay{
+.control-content__hero-overlay {
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -368,9 +360,6 @@ color: #E3B873;
 }
 
 .control-content__description {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 37px;
   text-align: center; 
@@ -398,18 +387,12 @@ color: #E3B873;
 .control-content__form-label {
   display: flex;
   flex-direction: column;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 21px;
   color: rgba(54, 54, 54, 0.5);
 }
 
 .control-content__form-input {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 23px;
   color: #363636;
@@ -421,9 +404,6 @@ color: #E3B873;
 
 .control-content__form-button {
   padding: 12px 75px;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 27px;
   text-align: center;
@@ -459,9 +439,6 @@ color: #E3B873;
 } 
 
 .checkbox-text {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   padding: 0;
 }
@@ -475,9 +452,6 @@ color: #E3B873;
 }
 
 .type-of-repair__title {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -535,9 +509,6 @@ color: #E3B873;
 }
 
 .type-of-repair-item__description-title {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   color: #363636;
@@ -550,9 +521,6 @@ color: #E3B873;
 }
 
 .type-of-repair-item__list-item {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 27px;
   color: #959595;
@@ -565,9 +533,6 @@ color: #E3B873;
 }
 
 .type-of-repair-item__price {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
@@ -617,18 +582,12 @@ color: #E3B873;
   border-radius: 50%;
   width: 42px;
   height: 42px;
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
 }
 
 .type-of-repair__measure-request-hints-item-text {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #363636;
@@ -648,9 +607,6 @@ color: #E3B873;
 }
 
 .type-of-repair__measure-request-form-title {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -661,9 +617,6 @@ color: #E3B873;
 .type-of-repair__measure-request-form-label {
   display: flex;
   flex-direction: column;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.5);
@@ -675,9 +628,6 @@ color: #E3B873;
 }
 
 .type-of-repair__measure-request-form-input {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 23px;
   color: #FFFFFF;
@@ -698,9 +648,6 @@ color: #E3B873;
 .type-of-repair__measure-request-form-checkbox {
   display: flex;
   margin-bottom: 39px;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 163.68%;
   color: #FFFFFF;
@@ -708,9 +655,6 @@ color: #E3B873;
 
 .type-of-repair__measure-request-form-button {
   padding: 13px 40px;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 27px;
   text-align: center;
@@ -739,9 +683,6 @@ color: #E3B873;
 }
 
 .type-of-repair__measure-request-discount-text {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 26px;
   color: #E3B873;
@@ -750,9 +691,9 @@ color: #E3B873;
 }
 
 .design-styles {
-  background: url(../image/desigh-styles.jpg);
+  background: url("../image/desigh-styles.jpg");
   background-size: cover;
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 
@@ -777,9 +718,6 @@ color: #E3B873;
 }
 
 .design-styles-block__title {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 27px;
   line-height: 37px;
   text-transform: uppercase;
@@ -792,9 +730,6 @@ color: #E3B873;
 }
 
 .design-styles-block__list-item {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
@@ -849,9 +784,6 @@ color: #E3B873;
 }
 
 .our-clients__title {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -878,9 +810,6 @@ color: #E3B873;
 }
 
 .our-clients__description {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 29px;
   text-align: center;
@@ -919,9 +848,6 @@ margin-left: 54px;
 }
 
 .our-clients-review__item-name {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 23px;
   color: #181818;
@@ -929,9 +855,6 @@ margin-left: 54px;
 }
 
 .our-clients-review__text {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 180%;
   color: #959595;
@@ -960,7 +883,7 @@ margin-left: 54px;
   margin-right: 15px;
 }
 
-.our-clients-review-font-image{
+.our-clients-review-font-image {
   display: flex;
   position: relative;
 }
@@ -1010,7 +933,6 @@ margin-left: 54px;
   flex-grow: 1;
   margin: -222px 0 52px 0;
   position: relative;
-  /* z-index: 1; */
   justify-content: center;
 }
 
@@ -1032,11 +954,7 @@ margin-left: 54px;
 } 
 
 .questions-contacts__content-form-title {
-  text-align: center;
   text-transform: uppercase;
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -1055,9 +973,6 @@ margin-left: 54px;
 }
 
 .questions-contacts__content-form-label {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.5);
@@ -1068,12 +983,9 @@ margin-left: 54px;
 }
 
 .questions-contacts__content-form-input {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: white;
   padding: 0 0 8px;
   background-color: black;
   border: none;
@@ -1085,9 +997,6 @@ margin-left: 54px;
 }
 
 .questions-contacts__content-form-button {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 27px;
   text-align: center;
@@ -1100,9 +1009,6 @@ margin-left: 54px;
 }
 
 .questions-contacts__content-text {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
