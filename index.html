@@ -10,20 +10,20 @@
 
 <body>
 	<header class="header">
-		<div class="content-container header-content">
+		<div class="content-container nav-content">
 			<div class="logo">
 				IC "Repair Design Project"
 			</div>
-			<nav class="header-nav">
-				<a href="" class="header-nav__link header-nav__link_home">HOME</a>
-				<a href="" class="header-nav__link">PROJECTS</a>
-				<a href="" class="header-nav__link">MEASUREMENT</a>	
-	      <a href="" class="header-nav__link">TEAM</a>
-				<a href="" class="header-nav__link">REVIEWS</a>
-				<a href="" class="header-nav__link">CONTACTS</a>
+			<nav class="nav-page">
+				<a href="" class="nav-page__link nav-page__link_home">HOME</a>
+				<a href="" class="nav-page__link">PROJECTS</a>
+				<a href="" class="nav-page__link">MEASUREMENT</a>	
+	      <a href="" class="nav-page__link">TEAM</a>
+				<a href="" class="nav-page__link">REVIEWS</a>
+				<a href="" class="nav-page__link">CONTACTS</a>
 			</nav>
-			<a href="tel:+7 (928) 768-32-39" class="header-nav__phone">+7 (928) 768-32-39</a>
-			<button class="button-gold header-nav__button">Request a call</button>
+			<a href="tel:+7 (928) 768-32-39" class="nav-page__phone">+7 (928) 768-32-39</a>
+			<button class="button-gold nav-page__button">Request a call</button>
 		</div>
 	</header>
 	<main>
@@ -77,9 +77,11 @@
 					<div class="slider-vector__icon">
 				    <img src="./image/vector_l.png" alt="vector_left">
 					</div>
-				    <span>&bull;</span>
-				    <span>&bull;</span>
-				    <span>&bull;</span>
+          <div class="slider-vector-page">
+            <div class="slider-vector-page__items slider-vector-page__items_first"></div>
+				    <div class="slider-vector-page__items "></div>
+				    <div class="slider-vector-page__items "></div>
+          </div>				    
 					<div class="slider-vector__icon vector-right">
 					  <img src="./image/vector_r.png" alt="vector_right">
 					</div>
@@ -136,10 +138,11 @@
                 Submit
               </button>
             </div>
-              <label>
-                <input type="checkbox" id="persobalData" name="agreement" value="agree" class="control-content__form-checkbox">
-                  I agree to the processing of personal data
-              </label>
+              <label class="form-checkbox-label">
+                <input type="checkbox" class="form-checkbox" id="persobalData" name="agreement" value="agree">
+                <span class="form-checkbox-consent"></span>
+                <span class="checkbox-text form-checkbox-text-black">I agree to the processing of personal data</span>
+              </label>          
           </form>
         </div> 
       </div>     
@@ -267,9 +270,10 @@
               <input type="text" placeholder="Your email:" class="type-of-repair__measure-request-form-input">
             </label>
 
-            <label class="type-of-repair__measure-request-form-checkbox">
-              <input type="checkbox" id="persobalData" name="agreement" value="agree">
-              I agree to the processing of personal data
+            <label class="form-checkbox-label">
+              <input type="checkbox" class="form-checkbox" id="persobalData" name="agreement" value="agree">
+              <span class="form-checkbox-consent"></span>
+              <span class="checkbox-text form-checkbox-text-white">I agree to the processing of personal data</span>
             </label>
 
             <button type="submit" form="nameform" value="Submit" class="button-gold type-of-repair__measure-request-form-button">
@@ -430,40 +434,80 @@
       <div class="our-clients-review-font-image__first-image" alt=""></div>
       <div class="our-clients-review-font-image__first-image" alt=""></div>
     </div>
-    <section class="content-container questions-contacts">
-      <div class="questions-contacts__content-form-block">
+    <section class="questions-contacts">
+      <div class="questions-contacts__content">
+        <div class="questions-contacts__content-form-block">
           <form action="" class="questions-contacts__content-form">
-
             <h4 class="questions-contacts__content-form-title">have any questions</h4>
             <div class="questions-contacts__content-form-contacts">
-              <label class="questions-contacts__content-form-label">
-                Name
-                <input type="text" placeholder="What is your name:" class="questions-contacts__content-form-input">
-              </label>
-              <label class="questions-contacts__content-form-label">
-                Phone
-                <input type="text" placeholder="Your phone number:" class="questions-contacts__content-form-input fon">
-              </label>
+              <div class="questions-contacts__content-form-label-name">
+                <label class="questions-contacts__content-form-label">
+                  Name
+                  <input type="text" placeholder="What is your name:" class="questions-contacts__content-form-input">
+                </label>
+              </div>             
+              <div class="questions-contacts__content-form-label-phone">
+                <label class="questions-contacts__content-form-label">
+                  Phone
+                  <input type="text" placeholder="Your phone number:" class="questions-contacts__content-form-input fon">
+                </label>
+              </div>
             </div>
-            
+
             <label class="questions-contacts__content-form-label questions-contacts__content-form-label_questions">
               Question
               <input type="text" placeholder="I want to know:" class="questions-contacts__content-form-input">
             </label>
           
-            <label class="questions-contacts__content-form-checkbox">
-              <input type="checkbox" id="persobalData" name="agreement" value="agree">
-              I agree to the processing of personal data
+            <label class="form-checkbox-label checkbox-label">
+              <input type="checkbox" class="form-checkbox" id="persobalData" name="agreement" value="agree">
+              <span class="form-checkbox-consent"></span>
+              <span class="checkbox-text form-checkbox-text-white">I agree to the processing of personal data</span>
             </label>
           
             <button type="submit" form="nameform" value="Submit" class="button-gold questions-contacts__content-form-button">
               Submit
             </button>
-
           </form>
+
+        </div>
+        <p class="questions-contacts__content-text">Rostov-on-Don, Nansen St., 239 Shopping Center <br />
+        Decorum Tel +7 (928) 768 32 29</p>       
+        <div class="questions-contacts__content-overlay"></div>
+        <div class="questions-contacts__content-contacts-items">
+          <div class="contacts-icon questions-contacts__content-contacts-email">
+            <img class="questions-contacts__content-item" src="./image/questions-contacts-icon-email.svg" alt="icon-email">
+          </div>
+          <div class="contacts-icon questions-contacts__content-contacts-insta">
+            <img class="questions-contacts__content-item" src="./image/question-contacts-icon-insta.svg" alt="icon-insta">
+          </div>
+        </div>
+        <div class="questions-contacts__content-maps-box">
+          <iframe class="questions-contacts__content-maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555312435803!2d39.72099081578648!3d47.2448435791624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sen!2sru!4v1623617297742!5m2!1sen!2sru"
+            width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>        
       </div>
-    </section>
-    
+    </section>    
 	</main>
+  <footer class="footer">
+    <div class="content-container nav-content">
+      <div class="logo">
+        IC "Repair Design Project"
+      </div>
+      <nav class="nav-page">
+        <a href="" class="nav-page__link nav-page__link_home">HOME</a>
+        <a href="" class="nav-page__link">PROJECTS</a>
+        <a href="" class="nav-page__link">MEASUREMENT</a>
+        <a href="" class="nav-page__link">TEAM</a>
+        <a href="" class="nav-page__link">REVIEWS</a>
+        <a href="" class="nav-page__link">CONTACTS</a>
+      </nav>
+      <a href="tel:+7 (928) 768-32-39" class="nav-page__phone">+7 (928) 768-32-39</a>
+      <button class="button-gold nav-page__button">Request a call</button>
+    </div>
+  </footer>
 </body>
 </html>
+
+

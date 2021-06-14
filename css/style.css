@@ -43,7 +43,7 @@ button {
   z-index: 1;
 }
 
-.header-nav__button {
+.nav-page__button {
   padding: 13px 33px;
 }
 
@@ -59,26 +59,26 @@ padding: 20px 42px;
 	background: black;
 }
 
-.header-content { 
+.nav-content { 
   display: flex;
 	justify-content: space-between;
   height: 83px;
   align-items: center;
 }
 
-.header-nav {
+.nav-page {
   display: flex;
   margin: 0 auto;
 }
 
-.header-nav__link {
+.nav-page__link {
   margin: 0px;
   text-decoration: none;
 	color: white;
   padding: 0 20px;
 }
 
-.header-nav__link_home {
+.nav-page__link_home {
   color: #E3B873;
 }
 
@@ -144,7 +144,7 @@ span {
   color: #FFFFFF;
 }
 
-.header-nav__phone {
+.nav-page__phone {
 font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -235,16 +235,22 @@ color: #E3B873;
   padding-right: 20px;
 }
 
-span {
-  color: white;
-  display: inline-block;
-  border-radius: 50%; 
-  padding-right: 8px;
-  padding-left: 8px;
+.slider-vector-page {
+  margin-top: 3px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-span + span {
-  color: rgba(255, 255, 255, .3);
+.slider-vector-page__items {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.slider-vector-page__items_first {
+  background: #FFF;
 }
 
 .vector-right {
@@ -424,27 +430,44 @@ span + span {
   text-transform: uppercase;
 }
 
-.control-content__form-checkbox {
-  position: relative; 
+.form-checkbox-label {
+  cursor: pointer;
 }
 
-.control-content__form-checkbox:active, .control-content__form-checkbox:checked:active {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+.form-checkbox {
+  display: none;
 }
 
-.control-content__form-checkbox:checked {
-	background-color: red;
-	border: 1px solid #adb8c0;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
-	color: #99a1a7;
+.form-checkbox:checked + .form-checkbox-consent::before {
+  opacity: 1;
 }
-.control-content__form-checkbox:checked:after {
-	content: '\2714';
-	font-size: 14px;
-	position: absolute;
-	top: 0px;
-	left: 3px;
-	color: #99a1a7;
+
+.form-checkbox-consent {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-checkbox-consent::before {
+  content: "\2714";
+  opacity: 0;
+  transition: .2s;
+} 
+
+.checkbox-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0;
+}
+
+.form-checkbox-text-black {
+  color: #000;
 }
 
 .type-of-repair {
@@ -579,7 +602,6 @@ span + span {
   display: flex;
   align-items: center;
   margin-bottom: 100px;
-  /* margin-left: 186px; */
 }
 
 .type-of-repair__measure-request-hints-item:last-of-type {
@@ -669,6 +691,10 @@ span + span {
   color: #fff;
 }
 
+.form-checkbox-text-white{
+  color: #FFFFFF; 
+}
+
 .type-of-repair__measure-request-form-checkbox {
   display: flex;
   margin-bottom: 39px;
@@ -681,7 +707,7 @@ span + span {
 }
 
 .type-of-repair__measure-request-form-button {
-  padding: 19px 40px;
+  padding: 13px 40px;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
@@ -691,6 +717,7 @@ span + span {
   text-transform: uppercase;
   margin-left: auto;
   display: block;
+  margin-top: 39px;
 }
 
 .type-of-repair__measure-request-discount-block {
@@ -956,16 +983,39 @@ margin-left: 54px;
   background-size: cover;
 }
 
-.questions-contacts {
-  margin: 0 auto;
-  max-width: 883px;
-  margin-top: -222px;
+.questions-contacts__content {
+  background: url("../image/font-questions-contact.jpg");
+  background-size: cover;
   position: relative;
-  z-index: 1;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.questions-contacts__content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+}
+
+.questions-contacts__content-form {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 181px;
+  flex-grow: 1;
+  margin: -222px 0 52px 0;
+  position: relative;
+  /* z-index: 1; */
+  justify-content: center;
 }
 
 .questions-contacts__content-form-block {
-
+  margin: 0 auto;
 }
 
 .questions-contacts__content-form {
@@ -975,7 +1025,11 @@ margin-left: 54px;
   padding: 34px 181px;
   max-width: 883px;
   flex-grow: 1;
-}
+  margin: -222px 0 52px 0;
+  max-width: 883px;
+  position: relative;
+  z-index: 1;  
+} 
 
 .questions-contacts__content-form-title {
   text-align: center;
@@ -993,8 +1047,11 @@ margin-left: 54px;
 
 .questions-contacts__content-form-contacts {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.questions-contacts__content-form-label-name {
+  margin-right: 58px;
 }
 
 .questions-contacts__content-form-label {
@@ -1008,7 +1065,6 @@ margin-left: 54px;
   flex-direction: column;
   margin-bottom: 48px;
   border-bottom: 1px solid grey;
-
 }
 
 .questions-contacts__content-form-input {
@@ -1024,13 +1080,7 @@ margin-left: 54px;
   width: 231px;
 }
 
-.questions-contacts__content-form-checkbox {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 163.68%;
-  color: #FFFFFF;
+.checkbox-label {
   margin-bottom: 50px;
 }
 
@@ -1043,9 +1093,63 @@ margin-left: 54px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 20px 54px;
-  background: #E3B873;
+  padding: 15px 75px;
   box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
-  width: 213px;
+  width: 200px;
   margin: 0 auto;
 }
+
+.questions-contacts__content-text {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+  z-index: 1;
+  margin-bottom: 26px;
+}
+
+.questions-contacts__content-contacts-items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.contacts-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.questions-contacts__content-contacts-email {
+  margin: 0 8px 0 16px;
+}
+
+.questions-contacts__content-contacts-insta {
+  margin: 0 16px 0 8px;
+}
+
+.questions-contacts__content-maps-box {
+  display: flex;
+  margin-bottom: 65px;
+}
+
+.questions-contacts__content-maps {
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.footer {
+  background: black;
+}
+
+
