@@ -6,7 +6,7 @@ body{
   font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 }
 
-* body {
+* {
   box-sizing: border-box;
 }
 
@@ -38,7 +38,7 @@ button {
 }
 
 .button-transparent {
-  background: rgba(0, 0, 0, .2); 
+  background: none; 
   color: white;
   border: 1px solid white;
 }
@@ -105,8 +105,7 @@ padding: 20px 42px;
   height: 707px;
   padding-top: 194px;
   position:relative;
-  z-index: 1;
-  
+  z-index: 1; 
 }
 
 .representation__button {
@@ -116,6 +115,10 @@ padding: 20px 42px;
 
 .representation__button + .representation__button {
   margin-left: 20px;
+}
+
+.representation__button-text-mobile {
+  display: none;
 }
 
 .hero-overlay {
@@ -129,13 +132,6 @@ padding: 20px 42px;
 
 .page-title {
   text-transform: uppercase;
-}
-
-span {
-  color: #E3B873;
-  list-style-type: none;
-  margin-left: 0;
-  margin-left: 0;
 }
 
 .page-title-representation {
@@ -418,10 +414,6 @@ color: #E3B873;
   display: none;
 }
 
-.form-checkbox:checked + .form-checkbox-consent::before {
-  opacity: 1;
-}
-
 .form-checkbox-consent {
   display: inline-flex;
   width: 18px;
@@ -433,10 +425,14 @@ color: #E3B873;
 }
 
 .form-checkbox-consent::before {
-  content: "\2714";
   opacity: 0;
+  content: "\2714";
   transition: .2s;
 } 
+
+.form-checkbox:checked + .form-checkbox-consent::before {
+  opacity: 1;
+}
 
 .checkbox-text {
   font-size: 14px;
@@ -580,8 +576,8 @@ color: #E3B873;
   background: #E3B873;
   border: 8px solid #FFFFFF;
   border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  width: 70px;
+  height: 70px;
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
@@ -638,7 +634,7 @@ color: #E3B873;
 }
 
 .type-of-repair__measure-request-form-input::placeholder {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .form-checkbox-text-white{
@@ -899,11 +895,9 @@ margin-left: 54px;
 }
 
 .our-clients-review-font-image__first-image { 
-  background: url("../image/background-our-review.jpeg");
-  width: 729px;
+  background: url("../image/background-our-review.jpeg") repeat;
+  width: 100%;
   height: 449px;
-  left: -300px;
-  background-size: cover;
 }
 
 .questions-contacts__content {
@@ -990,6 +984,10 @@ margin-left: 54px;
   background-color: black;
   border: none;
   width: 231px;
+} 
+
+.questions-contacts__content-form-input::placeholder {
+  color: #FFFFFF;
 }
 
 .checkbox-label {
@@ -1057,5 +1055,61 @@ margin-left: 54px;
 .footer {
   background: black;
 }
+
+
+@media (max-width: 375px) {
+  .content-container {
+    padding: 0 18px;
+    max-width: 375px;
+  }  
+  .nav-page {
+    display: none;
+  }
+  .nav-page__button {
+    display: none;
+  }
+  .nav-content {
+    height: 57px;
+  }
+  .nav-page__phone {
+    margin: 0;
+  }
+  .representation {
+    background: url("../image/hero-mobile.png");
+    height: 476px;
+    padding-top: 85px;
+  }
+  .page-title-representation{
+    font-size: 23px;
+    line-height: 35px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 16px 0 32px;
+  }
+  .representation__button {
+    display: block;
+    width: 100%;
+  }
+  .representation__button + .representation__button {
+    margin: 26px 0 0 0;
+  }
+  .representation__button-text-desktop {
+    display: none;
+  }
+  .representation__button-text-mobile {
+    display: inline;
+  }
+  .projects__right-content {
+    display: none;
+  }
+
+
+
+  .footer {
+    display: none;
+  }
+ }
 
 
