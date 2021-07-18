@@ -44,9 +44,10 @@ button {
 }
 
 .content-container {
-  max-width: 1250px;
+  max-width: 1286px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 18px;
 }
 
 .representation__container {
@@ -186,6 +187,10 @@ color: #E3B873;
   max-width: 442px;
 }
 
+.project__slider {
+display: none;
+}
+)
 .projects__info-box {
   margin-bottom: 85px;  
 }
@@ -475,10 +480,14 @@ color: #E3B873;
   margin-bottom: 31px;
 }
 
-.type-of-repair__content{
+.type-of-repair__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 230px;
+  flex-wrap: wrap;
+}
+.type-of-repair-item:not(:last-of-type) {
+  margin-bottom: 15px;
 }
 
 .type-of-repair-item {
@@ -556,7 +565,7 @@ color: #E3B873;
 
 .type-of-repair__measure-request-hints {
   padding-right: 80px;
-  margin-right: 131px;
+  margin-right: 200px;
 }
 
 .type-of-repair__measure-request-hints-item {
@@ -576,11 +585,13 @@ color: #E3B873;
   background: #E3B873;
   border: 8px solid #FFFFFF;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
+  flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .type-of-repair__measure-request-hints-item-text {
@@ -1058,58 +1069,153 @@ margin-left: 54px;
 
 
 @media (max-width: 375px) {
-  .content-container {
-    padding: 0 18px;
-    max-width: 375px;
-  }  
-  .nav-page {
-    display: none;
-  }
-  .nav-page__button {
-    display: none;
-  }
-  .nav-content {
-    height: 57px;
-  }
-  .nav-page__phone {
-    margin: 0;
-  }
-  .representation {
-    background: url("../image/hero-mobile.png");
-    height: 476px;
-    padding-top: 85px;
-  }
-  .page-title-representation{
-    font-size: 23px;
-    line-height: 35px;
-  }
-  .text {
-    font-size: 14px;
-    line-height: 19px;
-    margin: 16px 0 32px;
-  }
-  .representation__button {
-    display: block;
-    width: 100%;
-  }
-  .representation__button + .representation__button {
-    margin: 26px 0 0 0;
-  }
-  .representation__button-text-desktop {
-    display: none;
-  }
-  .representation__button-text-mobile {
-    display: inline;
-  }
-  .projects__right-content {
-    display: none;
-  }
+.content-container {
+  max-width: 375px;
+}  
+
+.nav-page {
+  display: none;
+}
+
+.nav-page__button {
+  display: none;
+}
+
+.nav-content {
+  height: 57px;
+}
+
+.nav-page__phone {
+  margin: 0;
+}
+
+.representation {
+  background: url("../image/hero-mobile.png");
+  height: 476px;
+  padding-top: 85px;
+}
+
+.page-title-representation{
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 19px;
+  margin: 16px 0 32px;
+}
+
+.representation__button {
+  display: block;
+  width: 100%;
+}
+
+.representation__button + .representation__button {
+  margin: 26px 0 0 0;
+}
+
+.representation__button-text-desktop {
+  display: none;
+}
+
+.representation__button-text-mobile {
+  display: inline;
+} 
+
+.projects{
+  padding-top: 36px;
+  padding-bottom: 0;
+}
+
+.projects__project-info {
+  margin-right: 0;
+ 
+}
+
+.projects__right-content {
+  display: none;
+}
+
+.projects__slider-vector {
+  display: none;
+}
+
+.projects__subtitle {
+  text-align: center;
+  line-height: 30px;
+}
+
+.projects__description {
+  text-align: center;
+  margin: 22px 0 0 0;
+  line-height: 17px;
+}
+
+.project__slider
+.projects__mobile-img {
+  background: url("../image/mobile-completed-projects.png");
+  height: 242px;
+  background-size: cover;
+}
+
+.projects__description{
+  margin-bottom: 22px;
+}
+
+.projects__info-box {
+  margin-top: 36px;
+}
+
+.project__slider {
+  position: relative;
+}
+
+.project__slider-button {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.project__slider-button_left {
+  left: 13px;
+}
+
+.project__slider-button_right {
+  right: 13px;
+}
+
+.project__slider-button-icon {
+  height: 11px;
+  width: 6px;
+}
+
+.project__slider-button_right > .project__slider-button-icon {
+  transform: rotateY(180deg);
+}
+
+.control {
+  margin-top: 0;
+  background-color: black;
+}
+
+
+
+
+
 
 
 
   .footer {
     display: none;
   }
- }
+}
 
 
