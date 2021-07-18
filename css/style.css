@@ -190,7 +190,7 @@ color: #E3B873;
 .project__slider {
 display: none;
 }
-)
+
 .projects__info-box {
   margin-bottom: 85px;  
 }
@@ -898,7 +898,7 @@ margin-left: 54px;
   position: relative;
 }
 
-.our-clients-review-font-image-transparenty {
+.our-clients-review-font-image-transparent {
   position: absolute;
   top: 0;
   left: 0;
@@ -1103,6 +1103,10 @@ margin-left: 54px;
   line-height: 31px;
 }
 
+.page-title-representation-rostov {
+  color: #E3B873;
+}
+
 .text {
   font-size: 14px;
   line-height: 19px;
@@ -1133,7 +1137,16 @@ margin-left: 54px;
 
 .projects__project-info {
   margin-right: 0;
- 
+}
+
+.projects__info-item-title {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.projects__info-item-text {
+  font-size: 11px;
+  line-height: 15px;
 }
 
 .projects__right-content {
@@ -1153,21 +1166,25 @@ margin-left: 54px;
   text-align: center;
   margin: 22px 0 0 0;
   line-height: 17px;
+  margin-bottom: 22px;
 }
 
-.project__slider
 .projects__mobile-img {
   background: url("../image/mobile-completed-projects.png");
   height: 242px;
   background-size: cover;
 }
 
-.projects__description{
-  margin-bottom: 22px;
-}
-
 .projects__info-box {
   margin-top: 36px;
+}
+.projects__subtitle {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.projects__description {
+  font-size: 11px;
 }
 
 .project__slider {
@@ -1208,6 +1225,81 @@ margin-left: 54px;
   margin-top: 0;
   background-color: black;
 }
+
+.projects__info-row {
+  margin-bottom: 58px;
+}
+
+.control-content__title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.control-content__icon {
+  margin-bottom: 40px;
+}
+
+.control-content__video-img {
+  width: 100%;
+}
+
+.control-content__video {
+  margin-bottom: 28px;
+}
+  
+.control-content__video-button-block {
+  height: 37px;
+  width: 37px;
+}
+
+.control-content__video-button-triangle {
+  border-top: 6px solid transparent;
+  border-left: 9px solid #fff;
+  border-bottom: 6px solid transparent;
+}
+
+.control-content__underline_break {
+  margin-bottom: 22px;
+}
+
+.control-content__description {
+  font-size: 11px;
+  color: #FFFFFF;
+  line-height: 19px;
+  margin-bottom: 61px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
