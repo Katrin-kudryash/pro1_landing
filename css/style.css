@@ -412,6 +412,8 @@ display: none;
 }
 
 .form-checkbox-label {
+  display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -427,6 +429,7 @@ display: none;
   color: #FFF;
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
 }
 
 .form-checkbox-consent::before {
