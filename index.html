@@ -53,20 +53,20 @@
 					Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction
 					market we have made happy more than 1000 families
 				  </p>
-          <div class="project__slider">
+          <div class="slider">
             <div class="projects__mobile-img"></div>           
-            <div class="project__slider-butto">
-              <img class="project__slider-button-icon" src="./image/project__slider-button_icon_left.svg" alt="">
+            <div class="slider-button slider-button__left">
+              <img class="slider-button-icon" src="./image/slider-button_icon_left.svg" alt="">
             </div>
-            <div class="project__slider-button project__slider-button_right">
-              <img class="project__slider-button-icon" src="./image/project__slider-button_icon_left.svg" alt="">
+            <div class="slider-button slider-button__right">
+              <img class="slider-button-icon" src="./image/slider-button_icon_right.svg" alt="">
             </div>
           </div>
-		      <div class="projects__info-box">
+	     <div class="projects__info-box">
 				    <div class="projects__info-row">
 					    <div class="projects__info-item">
 					  <h3 class="projects__info-item-title font-yeseva-one">City:</h3>
-					  <p class="projects__info-item-text font-nunito-sans">Rostov-on-Don
+					  <p class="projects__info-item-text font-nunito-sans">Rostov-on-Don </br>
 						LCD admiral</p>
 					    </div>
 					    <div class="projects__info-item">
@@ -146,15 +146,28 @@
                 Phone
                 <input type="text" placeholder="Your phone number:" class="control-content__form-input font-nunito-sans">
               </label>
-              <button type="submit" form="nameform" value="Submit" class="button-gold font-nunito-sans control-content__form-button">
-                Submit
-              </button>
-            </div>
-              <label class="form-checkbox-label">
-                <input type="checkbox" class="form-checkbox" id="persobalData" name="agreement" value="agree">
-                <span class="form-checkbox-consent"></span>
-                <span class="checkbox-text font-nunito-sans form-checkbox-text-black">I agree to the processing of personal data</span>
-              </label>          
+
+              
+              <div class="control-content__form-button-checkbox">
+                <button type="submit" form="nameform" value="Submit" class="button-gold font-nunito-sans control-content__form-button">
+                  Submit
+                </button>
+                <label class="form-checkbox-label-mobile">
+                  <input type="checkbox" class="form-checkbox" id="persobalData" name="agreement" value="agree">
+                  <span class="form-checkbox-consent"></span>
+                  <span class="checkbox-text font-nunito-sans form-checkbox-text-black">I agree to the processing of personal
+                    data</span>
+                </label>
+              </div>
+                </div>
+
+                <label class="form-checkbox-label">
+                  <input type="checkbox" class="form-checkbox" id="persobalData" name="agreement" value="agree">
+                  <span class="form-checkbox-consent"></span>
+                  <span class="checkbox-text font-nunito-sans form-checkbox-text-black">I agree to the processing of personal
+                    data</span>
+                </label>
+
           </form>
         </div> 
       </div>     
@@ -174,16 +187,16 @@
           <div class="type-of-repair-item">
             <img src="image/image_redecorating.jpg" class="type-of-repair-item__image" alt="redecoration">
             <div class="type-of-repair-item__description">
-              <h4 class="type-of-repair-item__description-title font-yeseva-one">Redecorating</h4>
-              <ul class="type-of-repair-item__list font-nunito-sans">
-                <li class="type-of-repair-item__list-item">Dismantling of old coatings</li>
-                <li class="type-of-repair-item__list-item">Wallpapering</li>
-                <li class="type-of-repair-item__list-item">Painting walls and ceilings</li>
-                <li class="type-of-repair-item__list-item">Laying flooring</li>
-                <li class="type-of-repair-item__list-item">Replacing plumbing</li>
-                <li class="type-of-repair-item__list-item">Replacing sockets and switches</li>
-                <li class="type-of-repair-item__list-item">Replacing doors</li>
-              </ul>
+                <h4 class="type-of-repair-item__description-title font-yeseva-one">Redecorating</h4>
+                <ul class="type-of-repair-item__list font-nunito-sans">
+                  <li class="type-of-repair-item__list-item">Dismantling of old coatings</li>
+                  <li class="type-of-repair-item__list-item">Wallpapering</li>
+                  <li class="type-of-repair-item__list-item">Painting walls and ceilings</li>
+                  <li class="type-of-repair-item__list-item">Laying flooring</li>
+                  <li class="type-of-repair-item__list-item">Replacing plumbing</li>
+                  <li class="type-of-repair-item__list-item">Replacing sockets and switches</li>
+                  <li class="type-of-repair-item__list-item">Replacing doors</li>
+                </ul>
               <div class="button-gold font-yeseva-one type-of-repair-item__price">
                 from 900 rub / m2
               </div>
@@ -231,8 +244,6 @@
 
         <div class="type-of-repair__measure-request">
           <img src="./image/measure-request-bg.svg" class=type-of-repair__measure-request-bg-image alt="фон">
-
-
           <div class="type-of-repair__measure-request-hints">
             <div class="type-of-repair__measure-request-hints-item">
               <div class=" font-yeseva-one type-of-repair__measure-request-hints-item-circle">
@@ -303,6 +314,8 @@
       </div>
     </section>
     <section class="design-styles">
+      
+      
       <div class="content-container design-styles-block">
         <div class="design-styles-block__list-box">
           <h3 class="font-yeseva-one design-styles-block__title">
@@ -321,6 +334,7 @@
               <li class="design-styles-block__list-item">Eclecticism</li>
             </ul>
         </div>
+        
         <div class="design-styles-block__image-container">
 
           <div class="design-styles-block__american-images">
@@ -336,6 +350,17 @@
         </div>
       </div>
       <div class="design-styles-overlay"></div>
+      <div class="design-styles__mobile">
+        <h3 class="font-yeseva-one design-styles__mobile-title">
+          We realize your <br> wildest fantasies</h3>
+        <div class="design-styles__mobile-image"></div>
+      </div>
+        <div class="slider-button slider-button__left_mobile">
+          <img class="slider-button-icon" src="./image/slider-button_icon_left.svg" alt="">
+        </div>
+        <div class="slider-button slider-button__right_mobile">
+          <img class="slider-button-icon" src="./image/slider-button_icon_right.svg" alt="">
+      </div>
     </section>
     <section class="content-container our-clients">
       <div class="our-clients__container">
@@ -349,7 +374,7 @@
             <div class="our-clients__underline"></div>
           </div> 
         </div>
-       <p class="font-nunito-sans our-clients__description">80% of our customers recommend us to their <br>
+        <p class="font-nunito-sans our-clients__description">80% of our customers recommend us to their <br>
       friends and family.</p>
         <div class="our-clients-review">
 
@@ -476,29 +501,45 @@
               <span class="form-checkbox-consent"></span>
               <span class="checkbox-text font-nunito-sans form-checkbox-text-white">I agree to the processing of personal data</span>
             </label>
-          
+            <label class="form-checkbox-label-mobile">
+              <input type="checkbox" class="form-checkbox" id="persobalData" name="agreement" value="agree">
+              <span class="form-checkbox-consent"></span>
+              <span class="checkbox-text font-nunito-sans form-checkbox-text-black">I agree to the processing of personal
+                data</span>
+            </label>
             <button type="submit" form="nameform" value="Submit" class="button-gold font-nunito-sans questions-contacts__content-form-button">
               Submit
             </button>
           </form>
-
         </div>
-        <p class="font-yeseva-one questions-contacts__content-text">Rostov-on-Don, Nansen St., 239 Shopping Center <br />
-        Decorum Tel +7 (928) 768 32 29</p>       
         <div class="questions-contacts__content-overlay"></div>
-        <div class="questions-contacts__content-contacts-items">
-          <div class="contacts-icon questions-contacts__content-contacts-email">
-            <img class="questions-contacts__content-item" src="./image/questions-contacts-icon-email.svg" alt="icon-email">
-          </div>
-          <div class="contacts-icon questions-contacts__content-contacts-insta">
-            <img class="questions-contacts__content-item" src="./image/question-contacts-icon-insta.svg" alt="icon-insta">
+        <div class="questions-contacts__content-container">
+        <div class="questions-contacts__content-container-box">
+          <p class="font-yeseva-one questions-contacts__content-container-box-text">Rostov-on-Don, Nansen St., 239 Shopping Center <br />
+            Decorum Tel +7 (928) 768 32 29</p>
+            <p class="font-yeseva-one questions-contacts__content-container-box-text-mobile">Rostov-on-Don, Nansen St., 239 Shopping Center
+              Decorum <br /> Tel  +7 (928) 768 32 29</p>
+          <div class="questions-contacts__content-contacts-items">
+            <div class="contacts-icon questions-contacts__content-contacts-email">
+              <img class="questions-contacts__content-item" src="./image/questions-contacts-icon-email.svg" alt="icon-email">
+              <!-- <img class="questions-contacts__content-item-mobile" src="./image/questions-contacts-icon-email-mobile.svg" alt="icon-email"> -->
+            </div>
+            <div class="contacts-icon questions-contacts__content-contacts-insta">
+              <img class="questions-contacts__content-item" src="./image/question-contacts-icon-insta.svg" alt="icon-insta">
+              <!-- <img class="questions-contacts__content-item-mobile" src="./image/question-contacts-icon-insta-mobile.svg"
+                alt="icon-email"> -->
+            </div>
           </div>
         </div>
         <div class="questions-contacts__content-maps-box">
-          <iframe class="questions-contacts__content-maps"
+          <iframe class="questions-contacts__content-maps-box-desktop"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555312435803!2d39.72099081578648!3d47.2448435791624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sen!2sru!4v1623617297742!5m2!1sen!2sru"
             width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>        
+          <iframe class="questions-contacts__content-maps-box-mobile"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555312435803!2d39.720990815617924!3d47.2448435791624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sen!2sru!4v1627373922559!5m2!1sen!2sru"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </div>    
       </div>
     </section>    
 	</main>
