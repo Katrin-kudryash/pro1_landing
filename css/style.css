@@ -1585,7 +1585,7 @@ margin-left: 54px;
 }
 }
 
-/* @media (max-width: 2560px) {
+@media (min-width: 2560px) {
 
   .representation {
     background: url("../image/IC\ _Repair\ Design\ Project_4K.jpg");
@@ -1650,7 +1650,7 @@ margin-left: 54px;
   .slider-button__right_mobile {
     display: none;
   }
-} */
+}
 
 
 
@@ -1681,6 +1681,8 @@ margin-left: 54px;
 
 .representation {
   background: url("../image/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 476px;
   padding-top: 85px;
 }
@@ -2024,12 +2026,12 @@ margin-left: 54px;
 }
 
 .slider-button__left_mobile {
-  left: 28px;
+  left: 38px;
   margin-top: 44px;
 }
 
 .slider-button__right_mobile {
-  right: 28px;
+  right: 38px;
   margin-top: 44px;
 } 
 
